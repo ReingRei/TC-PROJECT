@@ -19,3 +19,20 @@ export const Cardapio = {
     categorias: Categorias,
     produtos: Produtos
 }
+
+export class CardapioDto {
+    categorias: CategoriaDto[];
+    produtos: ProdutoDto[];
+}
+
+export class ProdutoDto {
+    id: number;
+    nome: string;
+    valor: number;
+    categoria: number;
+}
+
+export class CategoriaDto {
+    id: number;
+    nome: string;
+}
